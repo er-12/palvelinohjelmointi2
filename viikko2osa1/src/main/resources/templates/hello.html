@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Hello</title>
+<meta charset="UTF-8" /> 
+</head>
+<body>
+
+<!-- 	<p th:text="'Hello, ' + ${name} + '! '"/>
+		
+	<br>
+	<p><b>Check Age</b></p>
+	<div th:if="${age} &gt; 17">ok</div>
+	<div th:if="${age} &lt; 18">nope</div>
+	<br>
+	
+	<b>Hello Thymeleaf</b>
+	
+ 	<p> </p> -->
+	
+	
+	
+	<div th:if="${age} &gt; 17">
+	<p th:text=" 'Welcome, ' + ${name} + '!'" />
+	</div>
+	
+	<div th:if="${age} &lt; 18">
+	<p th:text=" 'You are too young, ' + ${name} + '!'" />
+	</div>
+	
+
+</body> 
+</html>
